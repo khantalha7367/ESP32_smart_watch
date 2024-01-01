@@ -1,7 +1,4 @@
 #define USE_ARDUINO_INTERRUPTS false
-//#include <Arduino_FreeRTOS.h>
-//#include <task.h>
-//#include <semphr.h>
 #include <PulseSensorPlayground.h>
 #include <TimeLib.h>
 #include <DS1307RTC.h>
@@ -12,29 +9,29 @@
 #include <ESPAsyncWebServer.h>
 #include <time.h>
 
-const char* ssid="AndroidAPb93d";
-const char* password="tk7367420";
+const char* ssid="ENTER_YOUR_SSID";
+const char* password="ENTER_YOUR_PASSWORD";
 AsyncWebServer server(80);
 
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 
-//PulseOximeter pox;
+
 
 Adafruit_SSD1306 display(SCREEN_WIDTH,SCREEN_HEIGHT,&Wire,-1);
 
-//#define OLED_RESET 4
+
 
 #define button_clock  15
-//#define button_heart  11
 
-//Adafruit_SSD1306 display(OLED_RESET);
+
+
 
 PulseSensorPlayground pulseSensor;
 tmElements_t tm;
 
-//SemaphoreHandle_t sem;
+
 
 String BPM="";
 String accel_steps="";

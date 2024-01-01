@@ -1,0 +1,1 @@
+This is an Arduino code for ESP32 for a smart watch using an I2C OLED, pulse heart sensor, and NTP server for time. For the steps, I have used a simple potentiometer, but you can replace it with an accelorometer. The code also sends data to an asynchronous webserver where it displays the data.
